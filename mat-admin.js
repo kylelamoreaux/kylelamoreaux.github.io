@@ -1062,5 +1062,4 @@ var tabLegendCallback = function(chart) {
     })
 
 
-  });
-}( jQuery ));
+
