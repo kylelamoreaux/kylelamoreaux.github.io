@@ -102,33 +102,3 @@
       });
       doughnutChart.closest('.card-content').find('.chart-legend-wrapper').append($(doughnutChartJS.generateLegend()));
     }
-
-
-    /********************
-     *      JQVMAP      *
-     ********************/
-    var vmap = $('#vmap');
-    if (vmap.length) {
-      $('#vmap').vectorMap({
-        map: 'world_en',
-        backgroundColor: 'transparent',
-        color: '#ffffff',
-        enableZoom: false,
-        hoverOpacity: 0.7,
-        selectedColor: '#666666',
-        showTooltip: true,
-        scaleColors: ['#FFFFFF', rgbToHex(chartColorGreen)],
-        values: sample_data,
-        normalizeFunction: 'polynomial',
-        onLabelShow: function (event, label, code) {
-          if(sample_data[code] > 0) {
-            var flag = $('<span class="flag-icon flag-icon-' + code + '"></span>');
-            label.prepend(flag);
-            label.append(': '+sample_data[code]+' Views');
-          }
-        }
-      });
-    }
-
-  });
-}( jQuery ));
