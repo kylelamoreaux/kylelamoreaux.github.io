@@ -457,7 +457,7 @@ var tabLegendCallback = function(chart) {
      *******************/
 
     // Line chart
-/*    var ctx = $("#line-chart");
+    var ctx = $("#line-chart");
     var myLineChart = new Chart(ctx, {
       type: 'line',
       data: {
@@ -571,7 +571,7 @@ var tabLegendCallback = function(chart) {
         },
       }
     });
-*/
+
 
     // Card metric chart toggle
     $(document).on('click', '.card-metric', function() {
