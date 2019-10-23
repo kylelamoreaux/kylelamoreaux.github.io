@@ -405,7 +405,7 @@ var tabLegendCallback = function(chart) {
     Chart.defaults.global.legend.display = false;
 
     // Candlestick styles
-   // Chart.defaults.candlestick.scales.xAxes[0].gridLines = {display: false};
+    Chart.defaults.candlestick.scales.xAxes[0].gridLines = {display: false};
     // Chart.defaults.candlestick.scales.yAxes[0].gridLines = {display: false};
 
     // Point styles
