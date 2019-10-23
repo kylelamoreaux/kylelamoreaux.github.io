@@ -457,7 +457,7 @@ var tabLegendCallback = function(chart) {
      *******************/
 
     // Line chart
- /*   var ctx = $("#line-chart");
+    var ctx = $("#line-chart");
     var myLineChart = new Chart(ctx, {
       type: 'line',
       data: {
@@ -737,7 +737,7 @@ var tabLegendCallback = function(chart) {
         maintainAspectRatio: false,
       }
     });
-*/
+
 
     // Bar chart
     var barChart = $('#stacked-bar-chart');
