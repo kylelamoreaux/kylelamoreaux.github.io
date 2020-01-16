@@ -20,7 +20,6 @@ module.exports = {
    getHsl: getHsl,
    getHwb: getHwb,
    getAlpha: getAlpha,
-
    hexString: hexString,
    rgbString: rgbString,
    rgbaString: rgbaString,
@@ -3931,14 +3930,14 @@ module.exports = function(Chart) {
 				}
 			});
 
-			/*if (!context || !canvas) {
+			if (!context || !canvas) {
 				// The given item is not a compatible context2d element, let's return before finalizing
 				// the chart initialization but after setting basic chart / controller properties that
 				// can help to figure out that the chart is not valid (e.g chart.canvas !== null);
 				// https://github.com/chartjs/Chart.js/issues/2807
-				console.error("Failed to create chart: can't acquire context from the given item");
+				//console.error("Failed to create chart: can't acquire context from the given item");
 				return;
-			}*/
+			}
 
 			me.initialize();
 			me.update();
